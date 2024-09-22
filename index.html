@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENSHIN IMPACT</title>
+</head>
+<body>
+    <h1 style>GENSHIN IMPACT</h1>
+    <div class="content">
+      <div class="card-anemo">
+          <div id="mondstadtmusic">
+        <header class="element">
+        </header>
+      </div>
+      </div>
+      <div class="card-geo">
+        <header class="element">
+        </header>
+      </div>
+      <div class="card-electro">
+        <header class="element">
+        </header>
+      </div>
+      <div class="card-dendro">
+        <header class="element">
+        </header>
+      </div>
+      <div class="card-hydro">
+        <header class="element">
+        </header>
+      </div>
+      <div class="card-pyro">
+        <header class="element">
+        </header>
+      </div>
+      <div class="card-cryo">
+        <header class="element">
+          <h1 class="eula">EULA</h1>
+        </header>
+      </div>
+    </div>
+  
+  <audio id="mondstadt" src="music/The City Favored by Wind.mp3" type="audio/mp3"></audio>
+  
+  <audio id="liyue" src="music/Liyue.mp3" type="audio/mp3"></audio>
+  
+  <audio id="inazuma" src="music/Inazuma.mp3" type="audio/mp3"></audio>
+  
+  <audio id="sumeru" src="music/Flickering Shadows of Trees.mp3" type="audio/mp3"></audio>
+  
+  <audio id="fontaine" src="music/Regali teneri.mp3" type="audio/mp3"></audio>
+  
+  <audio id="natlan" src="music/Natlan.mp3" type="audio/mp3"></audio>
+
+<style>
+  body {
+    background-image: url(genshinimpact.jpg);
+    background-size: cover;
+  }
+
+  h1 {
+    color: white;
+    font-family: Helvetica;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+  }
+
+  .container {
+    padding: 2px 20px;
+    background-image: url(.genshinimpact.jpg);
+  }
+
+  .element {
+    font-size: medium;
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    margin-left: 10px;
+    text-align: left;
+    transition: opacity 0.3s ease;
+  }
+
+  .card-anemo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    width: 380px;
+    height: 580px;
+    background-image: url("elements/anemo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .card-anemo:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("characters/kazuha.jpg");
+    background-size: cover;
+  }
+
+  /* Changing text on hover */
+  .card-anemo .venti {
+    display: block;
+  }
+
+  .card-anemo:hover .venti {
+    display: none;
+  }
+
+  .card-anemo .venti {
+    display: none;
+  }
+
+  .card-anemo:hover .venti {
+    display: block;
+  }
+
+  .card-geo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 380px;
+    height: 580px;
+    background-image: url("elements/geo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-geo:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("characters/zhongli.jpg");
+    background-size: cover;
+  }
+
+  .card-geo .zhongli {
+    display: block;
+  }
+
+  .card-geo:hover .zhongli {
+    display: none;
+  }
+
+  .card-geo .zhongli {
+    display: none;
+  }
+
+  .card-geo:hover .zhongli {
+    display: block;
+  }
+
+  .card-electro {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 380px;
+    height: 580px;
+    background-image: url("elements/electro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-electro:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("characters/raiden.jpg");
+    background-size: cover;
+  }
+
+  .card-electro .raiden {
+    display: block;
+  }
+
+  .card-electro:hover .raiden {
+    display: none;
+  }
+
+  .card-electro .raiden {
+    display: none;
+  }
+
+  .card-electro:hover .raiden {
+    display: block;
+  }
+
+  .card-dendro {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 380px;
+    height: 580px;
+    background-image: url("elements/dendro.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-dendro:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("characters/nahida.jpg");
+    background-size: cover;
+  }
+
+  .card-dendro .nahida {
+    display: block;
+  }
+
+  .card-dendro:hover .nahida {
+    display: none;
+  }
+
+  .card-dendro .nahida {
+    display: none;
+  }
+
+  .card-dendro:hover .nahida {
+    display: block;
+  }
+
+  .card-hydro {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 380px;
+    height: 580px;
+    background-image: url("elements/hydro.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-hydro:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("characters/furina.jpg");
+    background-size: cover;
+  }
+
+  .card-hydro .furina {
+    display: block;
+  }
+
+  .card-hydro:hover .furina {
+    display: none;
+  }
+
+  .card-hydro .furina {
+    display: none;
+  }
+
+  .card-hydro:hover .furina {
+    display: block;
+  }
+
+  .card-pyro {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 380px;
+    height: 580px;
+    background-image: url("elements/pyro.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-pyro:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("characters/diluc.jpg");
+    background-size: cover;
+  }
+
+  .card-pyro .bennet {
+    display: block;
+  }
+
+  .card-pyro:hover .bennet {
+    display: none;
+  }
+
+  .card-pyro .bennet {
+    display: none;
+  }
+
+  .card-pyro:hover .bennet {
+    display: block;
+  }
+
+  .card-cryo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 380px;
+    height: 580px;
+    background-image: url("elements/cryo.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-cryo:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    background-image: url("characters/eula.jpg");
+    background-size: cover;
+  }
+
+  .card-cryo .eula {
+    display: block;
+  }
+
+  .card-cryo:hover .eula {
+    display: none;
+  }
+
+  .card-cryo .eula {
+    display: none;
+  }
+
+  .card-cryo:hover .eula {
+    display: block;
+  }
+</style>
+<script>
+    const audio = document.getElementById('mondstadt');
+const hoverElement = document.getElementById('mondstadtmusic');
+
+hoverElement.addEventListener('mouseover', () => {
+  audio.play();
+});
+
+hoverElement.addEventListener('mouseout', () => {
+  audio.pause();
+});
+
+const audio = document.getElementById('liyue');
+const hoverElement = document.getElementById('liyuemusic');
+
+hoverElement.addEventListener('mouseover', () => {
+  audio.play();
+});
+
+hoverElement.addEventListener('mouseout', () => {
+  audio.pause();
+});
+
+const audio = document.getElementById('inazuma');
+const hoverElement = document.getElementById('inazumamusic');
+
+hoverElement.addEventListener('mouseover', () => {
+  audio.play();
+});
+
+hoverElement.addEventListener('mouseout', () => {
+  audio.pause();
+});
+
+const audio = document.getElementById('sumeru');
+const hoverElement = document.getElementById('sumerumusic');
+
+hoverElement.addEventListener('mouseover', () => {
+  audio.play();
+});
+
+hoverElement.addEventListener('mouseout', () => {
+  audio.pause();
+});
+
+const audio = document.getElementById('fontaine');
+const hoverElement = document.getElementById('fontainemusic');
+
+hoverElement.addEventListener('mouseover', () => {
+  audio.play();
+});
+
+hoverElement.addEventListener('mouseout', () => {
+  audio.pause();
+});
+
+const audio = document.getElementById('natlan');
+const hoverElement = document.getElementById('natlanmusic');
+
+hoverElement.addEventListener('mouseover', () => {
+  audio.play();
+});
+
+hoverElement.addEventListener('mouseout', () => {
+  audio.pause();
+});
+
+</script>
+</body>
+</html>
